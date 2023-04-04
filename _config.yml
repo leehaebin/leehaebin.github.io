@@ -1,8 +1,8 @@
 # Site
 locale: 'ko-KR'
-name: "Jeffery"
-title: "Jeffery"
-description: "Jeffery Blog's."
+name: "haebin"
+title: "haebin bolg"
+description: "haebin Blog's."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 url: 'http://leehaebin.github.io'
