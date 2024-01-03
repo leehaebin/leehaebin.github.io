@@ -1,46 +1,50 @@
 $(function(){
-    $('.skills').myskillbar({});
+  $('.skills').myskillbar({});
+});
 
+window.addEventListener('DOMContentLoaded', event => {
 
+  // Navbar shrink function
+  var navbarShrink = function () {
+      const navbarCollapsible = document.body.querySelector('#mainNav');
+      if (!navbarCollapsible) {
+          return;
+      }
+      if (window.scrollY === 0) {
+          navbarCollapsible.classList.remove('navbar-shrink')
+      } else {
+          navbarCollapsible.classList.add('navbar-shrink')
+      }
 
-    /* $gallOpen.on('click',function(event){
-      event.preventDefault();
-      var src = $(this).attr('href');
-  
-      $gallImg.css({
-        backgroundImage : 'url('+src+')'
-      }).parent().fadeIn();
-    });
-  
-    $gallClose.on('click',function(event){
-      event.preventDefault();
-      $gall.fadeOut();
-    });
-  
-    $gall.on('click',function(){
-      $gall.fadeOut();
-    });//end of design */
+  };
 
-    $('.pop').click(function(e){
-      e.preventDefault();
-      $('.popup').fadeIn(500);
+  // Shrink the navbar 
+  navbarShrink();
+
+  // Shrink the navbar when page is scrolled
+  document.addEventListener('scroll', navbarShrink);
+
+  // Activate Bootstrap scrollspy on the main nav element
+  const mainNav = document.body.querySelector('#mainNav');
+  if (mainNav) {
+      new bootstrap.ScrollSpy(document.body, {
+          target: '#mainNav',
+          rootMargin: '0px 0px -40%',
+      });
+  };
+
+  // Collapse responsive navbar when toggler is visible
+  const navbarToggler = document.body.querySelector('.navbar-toggler');
+  const responsiveNavItems = [].slice.call(
+      document.querySelectorAll('#navbarResponsive .nav-link')
+  );
+  responsiveNavItems.map(function (responsiveNavItem) {
+      responsiveNavItem.addEventListener('click', () => {
+          if (window.getComputedStyle(navbarToggler).display !== 'none') {
+              navbarToggler.click();
+          }
+      });
   });
-  $('.close').click(function(){
-      $('.popup').fadeOut(500);
-  });
-  $('.pop2').click(function(e){
-    e.preventDefault();
-    $('.popup2').fadeIn(500);
-});
-$('.close').click(function(){
-    $('.popup2').fadeOut(500);
+
 });
 
-$('.pop3').click(function(e){
-    e.preventDefault();
-    $('.popup3').fadeIn(500);
-});
-$('.close').click(function(){
-    $('.popup3').fadeOut(500);
-});
-});

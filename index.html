@@ -1,128 +1,497 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>haebin blog</title>
-    <link rel="stylesheet" href="css/style2.css">
+    <title>HAEBIN's Portfolio</title>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbg text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">HAEBIN's Portfolio</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#skill">skill</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead navbg text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0">haebin lee</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-heart"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">HTML, CSS, JavaScript, JAVA, JSP, SPRING-BOOT, MySql ...</p>
+        </div>
+    </header>
+
+    <!-- About Section-->
+    <section class="page-section bg text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-heart"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="myimg col-md-6 d-md-flex align-items-md-center justify-content-md-end">
+                    <img src="assets/img/me.jpg" alt="me" class="img-fluid">
+                </div>
+                <div class="myinfo col-md-6" style="font-weight: bold; font-size: 22px; margin-top: 20px;"> <!-- 글씨 스타일을 여기에 적용 -->
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-user"></i> &nbsp;
+                            <span>이름:</span>
+                            <p>이해빈</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-calendar"></i> &nbsp;
+                            <span>생년월일:</span>
+                            <p>1999.03.02</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i> &nbsp;
+                            <span>주소지:</span>
+                            <p>경기도 김포시</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i> &nbsp;
+                            <span>연락처:</span>
+                            <p>010-2023-3958</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i> &nbsp;
+                            <span>이메일:</span>
+                            <p>yse03791@naver.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Section-->
+    <section class="page-section skill" id="skill">
+        <div class="container">
+            <!-- skill Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">skill</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-heart"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="skill">
+                <div id="skill1" class="skills" data-width="90" data-background="#ffadea" >html,css (90%)</div>
+                <div id="skill2" class="skills" data-width="85" data-background="#add0ff">JavaSctipt (85%)</div>
+                <div id="skill3" class="skills" data-width="50" data-background="#ffa5ac">database (50%)</div>
+                <div id="skill4" class="skills" data-width="70" data-background="#bbffad">java (70%)</div>
+                <div id="skill5" class="skills" data-width="60" data-background="#e1adff">react (60%)</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio bg" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">Portfolio</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-heart"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/doumview.png" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/weatherview.png" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/myshopview.png" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 4-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/rspview.png" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 5-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/myrestaurantview.png" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 6-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/travelview.png" alt="..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-heart"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Contact Section Form-->
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <div class="contact-form">
+                        <form class="gform" action="https://script.google.com/d/1aaPRRgJK2dpg7XOgGxVX5qt_aFLHKhkk3-g_FLfNtteufQzGOMvYuxwj/edit?usp=sharing" method="POST">
+                          <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                          </div>
+                          <div class="form-group">
+                            <button type="submit">Send Message</button>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0" style="font-weight: bold;">
+                        경기도 김포시 감정동
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">SNS</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/h._.beeen/"><i class="fab fa-fw fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/leehaebin"><i class="fab fa-fw fa-github"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">Contact me</h4>
+                    <p class="lead mb-0"> Email : yse03791@naver.com </p>
+                    <p class="lead mb-0"> Tel : +82 10-2023-3958 </p>
+                    <p class="lead mb-0"> KaKaoTalk:  </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
+    </div>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">doum cafe</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-4" src="assets/img/portfolio/doum.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-2 text-start">구분 : 개인 프로젝트</p>
+                                <p class="mb-2 text-start">기간 : 2023.02.10 ~ 2023.02.15</p>
+                                <p class="mb-2 text-start">개요 : 다음 카페를 보고 html을 이용해 만든 프로젝트</p>
+                                <p class="mb-2 text-start">기능 : 메인화면 슬라이드, 카테고리 별 랭킹 hover 밑줄 효과</p>
+                                <p class="mb-2 text-start">소스 보기 : <a href="https://github.com/leehaebin/cafe_work">https://github.com/leehaebin/cafe_work</a></p>
+                                <button class="mt-2 btn btnbg" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">weather</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-3" src="assets/img/portfolio/weather.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-2 text-start">구분 : 개인 프로젝트</p>
+                                <p class="mb-2 text-start">기간 : 23.02.20. ~ 23.02.27.</p>
+                                <p class="mb-2 text-start">개요 : OpenWeatherMap을 활용한 날씨앱</p>
+                                <p class="mb-2 text-start">기능 : 시간별 슬라이드, OpenWeatherMap을 활용하여 날씨 데이터 불러오기</p>
+                                <p class="mb-2 text-start">소스 보기 : <a href="https://github.com/leehaebin/weather"> https://github.com/leehaebin/weather</a></p>
+                                <button class="mt-2 btn btnbg" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">myshop</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/myshop.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-2 text-start">구분 : 개인 프로젝트</p>
+                                <p class="mb-2 text-start">기간 : 2023.03.03 - 2023.03.13</p>
+                                <p class="mb-2 text-start">개요 : 쇼핑몰 사이트</p>
+                                <p class="mb-2 text-start">기능 : json 데이터를 불러와서 상품 목록 나열</p>
+                                <p class="mb-2 text-start">소스 보기 : <a href="https://github.com/leehaebin/myshop"> https://github.com/leehaebin/myshop</a></p>
+                                <button class="mt-2 btn btnbg" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">RSP game</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/rsp.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-2 text-start">구분 : 개인 프로젝트</p>
+                                <p class="mb-2 text-start">기간 : 2023.03.27 ~ 2023.04.05</p>
+                                <p class="mb-2 text-start">개요 : html로 만든 가위바위보 게임</p>
+                                <p class="mb-2 text-start">기능 : 컴퓨터의 가위바위로 랜덤 계산, 승률계산, 애니메이션</p>
+                                <p class="mb-2 text-start">소스 보기 : <a href="https://github.com/leehaebin/RSPgame"> https://github.com/leehaebin/RSPgame</a></p>
+                                <button class="mt-2 btn btnbg" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 5-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">myrestaurant</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/myrestaurant.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-2 text-start">구분 : 개인 프로젝트</p>
+                                <p class="mb-2 text-start">기간 : 2023.04.26 ~ 2023.05.10</p>
+                                <p class="mb-2 text-start">개요 : 경기도 맛집 어플</p>
+                                <p class="mb-2 text-start">기능 : 경기데이터드림의 공공API를 활용하여 경기도 식당 목록 가져오기, 카카오 지도 API로 지도와 로드뷰 연동, 로그인, 회원가입, 회원정보수정</p>
+                                <p class="mb-2 text-start">소스 보기 : <a href="https://github.com/leehaebin/restaurant"> https://github.com/leehaebin/restaurant</a></p>
+                                <button class="mt-2 btn btnbg" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 6-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">TravelBlog</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/travel.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-2 text-start">구분 : 개인 프로젝트</p>
+                                <p class="mb-2 text-start">기간 : 2023.06.19 ~ 2023.06.30</p>
+                                <p class="mb-2 text-start">개요 : spring과 react를 이용한 여행 블로그</p>
+                                <p class="mb-2 text-start">기능 : sts에서 게시글 등록, 관리자모드 로그인 (필터), react에서 게시글 목록확인</p>
+                                <p class="mb-2 text-start">소스 보기 : <a href="https://github.com/leehaebin/TravelBlog"> https://github.com/leehaebin/TravelBlog</a></p>
+                                <button class="btn btnbg" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="js/animate.min.js"></script>
     <script src="js/skill.js"></script>
     <script src="js/script.js"></script>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="#" class="logo">haebin Blog</a>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skill">skill</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#content">Contetn</a></li>
-                <!-- <li><a href="#contact">Contact</a></li> -->
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Welcome to My Portfolio</h1>
-            <p>full stack proframmer</p>
-        </div>
-    </header>
-
-    <section id="about"> 
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="profile">
-                <img src="images/03.jpg" alt="03">
-                <div class="prof">
-                    <ul>
-                        <li>Name : <span>이해빈</span></li>
-                        <li>Age : <span>25</span></li>
-                        <li>Phone : <span>010 1234 1234</span></li>
-                        <li>Email : <span>yse03791@naver.com</span></li>
-                        <li>City : <span>김포시, 대한민국</span></li>
-                    </ul>
-                </div>
-            </div>
-            <p>무한한 얼음이 산야에 꽃이 이상 봄날의 능히 그들의 이것이다. 살았으며, 같지 미인을 이상은 힘있다. 
-                청춘이 뭇 황금시대의 그들의 영락과 우는 없는 인간은 미묘한 끓는다. 하였으며, 
-                인류의 넣는 청춘의 아니한 얼음이 살았으며, 이상의 쓸쓸하랴? 두손을 뛰노는 주며, 것이다. 
-                아니더면, 인류의 보는 같으며, 황금시대다. 
-                가치를 눈이 오직 있을 아름답고 대고, 가장 황금시대다.</p>
-        </div>
-    </section>
-
-    <section id="skill">
-        <div class="container">
-            <h2>My skill</h2>
-            <div class="skill">
-                <!-- <h1>My skill</h1> -->
-                <div id="skill1" class="skills" data-width="70" data-background="#ffadea">html,css (70%)</div>
-                <div id="skill2" class="skills" data-width="85" data-background="#add0ff">JavaSctipt (85%)</div>
-                <div id="skill3" class="skills" data-width="30" data-background="#ffa5ac">database (30%)</div>
-                <div id="skill4" class="skills" data-width="30" data-background="#bbffad">java (30%)</div>
-                <div id="skill5" class="skills" data-width="20" data-background="#e1adff">react (20%)</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-
-            <div class="gallery">
-                <div class="pop">
-                    <img src="images/cafe.png" alt="ex1">
-                </div>
-                <div class="pop2">
-                    <img src="images/myshop.png" alt="ex2">
-                </div>
-                <div class="pop3">
-                    <img src="images/weather.png" alt="ex3">
-                </div>
-            </div>
-            
-        </div>
-    </section>
-
-    <section id="content">
-        <div class="container">
-            <h2>Contetn</h2>
-            <div class="content">
-                <p>시간 내어 제 작품들을 봐 주셔서 감사합니다.<br>
-                    앞으로도 많은 기대 부탁 드리겠습니다.</p>
-            </div>
-            <div class="snsbox">
-                <button class="sns facebook"><i></i>Facebook</button>
-                <button class="sns twitter"><i></i>Twitter</button>
-                <button class="sns instagram"><i></i>Instagram</button>
-                <button class="sns line"><i></i>Line</button>
-                <button class="sns youtube"><i></i>Youtube</button>
-            </div>
-
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <div class="popup">
-        <button class="close">X</button>
-        <img src="images/ex1.png" alt="ex1">
-    </div>
-
-    <div class="popup2">
-        <button class="close">X</button>
-        <img src="images/ex2.png" alt="ex2">
-    </div>
-
-    <div class="popup3">
-        <button class="close">X</button>
-        <img src="images/ex3.png" alt="ex3">
-    </div>
-
-</body>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+</body> 
 </html>
